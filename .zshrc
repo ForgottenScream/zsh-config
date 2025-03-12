@@ -44,8 +44,8 @@ bindkey -M vicmd v edit-commmand-line
 
 source ~/.dotfiles/zsh/external/bd.zsh
 
-source $DOTFILES/zsh/scripts.sh
-ftmuxp
+source ~/.dotfiles/zsh/scripts.sh
+#ftmuxp
 
 if [ $(command -v "fzf") ]; then
     source /usr/share/fzf/completion.zsh
