@@ -7,7 +7,7 @@ unsetopt CASE_GLOB
 autoload -Uz compinit; compinit
 #Autocomplete hidden files
 _comp_options+=(globdots)
-source ~/dotfiles/zsh/external/completion.zsh
+source ~/.dotfiles/zsh/external/completion.zsh
 
 fpath=($ZDOTDIR/external $fpath)
 
@@ -42,7 +42,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-commmand-line
 
-source ~/dotfiles/zsh/external/bd.zsh
+source ~/.dotfiles/zsh/external/bd.zsh
 
 source $DOTFILES/zsh/scripts.sh
 ftmuxp
