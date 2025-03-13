@@ -21,7 +21,7 @@ export HISTSIZE=10000
 # Maximum events in history file
 export SAVEHIST=10000
 
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="$HOME/.dotfiles"
 
 # Assigning ripgrep as default
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"

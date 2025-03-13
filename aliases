@@ -42,3 +42,4 @@ alias tmuxs='tmux new-session -s' # tmuxs <session_name>
 
 #Misc
 alias open='xdg-open'
+alias mergeterm='xrdb -merge $DOTFILES/X11/.Xresources'
