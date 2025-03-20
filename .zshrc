@@ -59,6 +59,10 @@ then
 fi
 [ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env
 
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+
 ###################################################################
 #Needs to be sourced last so everything else needs to be above ^^^#
 ###################################################################
