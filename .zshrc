@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 source "$XDG_CONFIG_HOME/zsh/aliases"
 
+export VISUAL=nvim
+export EDITOR=nvim
+
 setopt AUTO_PARAM_SLASH
 unsetopt CASE_GLOB
 
