@@ -32,7 +32,10 @@ alias n='nvim'
 #Git Aliases
 alias ga='git add'
 alias gc='git commit'
-alias gp='git push'
+alias gP='git push'
+alias gp='git pull'
+alias gs='git status'
+
 
 #Tmux Aliases
 alias tmuxa='tmux attach-session -t'
