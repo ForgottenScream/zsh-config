@@ -58,8 +58,9 @@ fi
 # Change this to not autostart on tty2
 if [ "$(tty)" = "/dev/tty2" ];
 then
-    pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+    pgrep i3 || exec startx &>/dev/null "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
+
 [ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env
 
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
