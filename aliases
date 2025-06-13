@@ -35,7 +35,7 @@ alias gc='git commit'
 alias gP='git push'
 alias gp='git pull'
 alias gs='git status'
-
+alias lg='lazygit'
 
 #Tmux Aliases
 alias tmuxa='tmux attach-session -t'
