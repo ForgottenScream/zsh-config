@@ -15,16 +15,15 @@ source ~/.dotfiles/zsh/external/completion.zsh
 
 fpath=($ZDOTDIR/external $fpath)
 
-autoload -Uz prompt_purification_setup; prompt_purification_setup
-
 source ~/.dotfiles/zsh/scripts.sh
 ftmuxp
 
 if [ $(command -v "fzf") ]; then
-    source /usr/share/fzf/completion.zsh
+#    source /usr/share/fzf/completion.zsh
     source /usr/share/fzf/key-bindings.zsh
 fi
 
+#Auto start i3
 if [ "$(tty)" = "/dev/tty1" ];
 then
     pgrep i3 || exec startx &>/dev/null "$XDG_CONFIG_HOME/X11/.xinitrc"
