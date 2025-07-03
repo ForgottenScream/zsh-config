@@ -15,18 +15,20 @@ source ~/.dotfiles/zsh/external/completion.zsh
 
 fpath=($ZDOTDIR/external $fpath)
 
-source ~/.dotfiles/zsh/scripts.sh
-ftmuxp
-
 if [ $(command -v "fzf") ]; then
 #    source /usr/share/fzf/completion.zsh
     source /usr/share/fzf/key-bindings.zsh
 fi
 
-#Auto start i3
+# Auto start i3
 if [ "$(tty)" = "/dev/tty1" ];
 then
     pgrep i3 || exec startx &>/dev/null "$XDG_CONFIG_HOME/X11/.xinitrc"
+fi
+
+# Auto start tmux
+if command -v tmux &>/dev/null && [[ -z "$TMUX" ]] && [[ "$TERM" != "linux" ]]; then
+	tmux attach-session -t default 2>/dev/null || tmux new-session -s default
 fi
 
 [ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env
