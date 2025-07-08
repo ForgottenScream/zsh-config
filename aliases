@@ -26,7 +26,3 @@ alias removepicmp3='eyeD3 --remove-all-images'
 
 #ZSH Aliases
 alias n='nvim'
-
-#Misc
-alias open='xdg-open'
-alias mergeterm='xrdb -merge $DOTFILES/X11/.Xresources'
