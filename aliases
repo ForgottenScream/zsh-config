@@ -25,22 +25,7 @@ alias removepicflac='metaflac --remove --block-type=PICTURE,PADDING --dont-use-p
 alias removepicmp3='eyeD3 --remove-all-images'
 
 #ZSH Aliases
-alias d='dirs -v'
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
 alias n='nvim'
-
-#Git Aliases
-alias ga='git add'
-alias gc='git commit'
-alias gP='git push'
-alias gp='git pull'
-alias gs='git status'
-alias lg='lazygit'
-
-#Tmux Aliases
-alias tmuxa='tmux attach-session -t'
-alias tmuxl='tmux list-session'
-alias tmuxs='tmux new-session -s' # tmuxs <session_name>
 
 #Misc
 alias open='xdg-open'
